@@ -1,0 +1,60 @@
+#include <unistd.h>
+#include <string.h>
+#include <sys/wait.h>
+#include <sys/shm.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdio.h>
+
+void escrLDouble(int *fd, long double ldouble){
+	write(fd[1], &ldouble, sizeof(long double)); 
+}
+
+void leerLDouble(int *fd, long double *ldouble){
+	read(fd[0], ldouble, sizeof(long double));
+}
+
+long factorial(int n){
+  int i;
+  long resultado = 1;
+ 
+  for (i = 1; i <= n; i++){
+    resultado = resultado * i;
+  }
+  return resultado;
+}
+
+long double chudnovsky(double k){
+	long double val= 12*pow(-1, k)*factorial(6*k)*(13591409 + 545140134*k)/(factorial(3*k)*pow(factorial(k), 3)*pow(640320, 3*k + 3.0/2));
+	return val;
+}
+
+int main(int argc, char* arcv[]) { 
+	int n, i;
+	//printf("Ingrese la cantidad de intervalos de 14 digitos de pi: \n");
+	//scanf("%d",&n);	
+	/*int v[n];
+	int tubs[n][2];
+	for(i=0; i<n; i++){
+		pipe(tubs[i]);
+	}
+	for(i=0; i<n;i++){
+		if((v[i]=fork())==0){
+			for(i=0; i<n; i++){
+				for(j=0; j<n; j++){
+					if(j!=i){
+						close(tubs[i][0]);
+						close(tubs[i][1]);
+					}
+				}
+			}
+			
+			break;
+		}
+	}*/
+	
+	long double val=chudnovsky(0);
+	printf("%.51llf", 1/val);
+	return 0;
+}
+

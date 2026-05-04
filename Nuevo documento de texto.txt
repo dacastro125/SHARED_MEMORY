@@ -1,0 +1,89 @@
+#include<stdio.h>
+#include <unistd.h>
+#include<stdlib.h>
+#include<string.h>
+#include<sys/shm.h>
+#include<sys/wait.h>
+#define N 100
+
+typedef struct Matriz{
+int A[N][N];
+int B[N][N];
+int R[N][N];
+int Sw;
+int Tam;
+
+}Matriz;
+ 
+
+
+int main()
+{
+         int shmid,i=0,j=0;
+         int pidhijo;
+         Matriz *shm_pointer;
+        
+        shmid = shmget(IPC_PRIVATE, sizeof(Matriz), IPC_CREAT|0666);
+        if(shmid == -1) printf("error creando shmget\n");
+        
+        shm_pointer = shmat(shmid, NULL, 0);
+        if(shm_pointer == (void *)-1)printf("adjuntando segmento shmat");
+            
+            if(fork()==0){
+                while(shm_pointer->Sw!=1){}
+                int i,k,r,x;
+                for(i=1;i<shm_pointer->Tam;i++){
+                  k=k+1;
+				  for(r=k;r<shm_pointer->Tam;r++){
+				  	
+				  	for(x=0;x<shm_pointer->Tam;x++){
+				  		
+				  		shm_pointer->R[i][r]=shm_pointer->R[i][r]+shm_pointer->A[i][x]*shm_pointer->B[x][r];
+					  }
+				  	
+				  	
+				  }	
+				}
+                
+                for(i=0;i<shm_pointer->Tam;i++){
+                	for(x=0;x<shm_pointer->Tam;x++){
+                		
+                	printf("matriz R [%d][%d]=%d",i,x,shm_pointer->R[i][x]);	
+                		
+					}
+                	printf("\n");
+				}
+                
+            }else if(fork()==0){
+                while(shm_pointer->Sw!=2){}
+                
+            }else if(fork()==0){
+                while(shm_pointer->Sw!=3){}
+                
+                
+            }else{
+                //padre
+             printf("ingrese el tamaño de la matriz");
+             scanf("%d",&shm_pointer->Tam);
+             int i,x;
+             for(i=0;i<shm_pointer->Tam;i++){
+				for(x=0;x<shm_pointer->Tam;x++) {
+            		 printf("ingrese valores a la matriz A [%d][%d]",i,x);
+				     scanf("%d",&shm_pointer->A[i][x]);	
+				}}
+			    
+			    printf("\n");
+    		    for(i=0;i<shm_pointer->Tam;i++){
+				for(x=0;x<shm_pointer->Tam;x++) {
+            		 printf("ingrese valores a la matriz B [%d][%d]",i,x);
+				     scanf("%d",&shm_pointer->B[i][x]);	
+				}}
+			      
+				  shm_pointer->Sw=1; 
+				  wait(NULL);
+				  wait(NULL);    
+				  wait(NULL);      
+            }
+
+    return 0;
+}
