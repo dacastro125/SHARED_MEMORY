@@ -1,0 +1,4 @@
+3
+M;vm-004f;eu-west-2;FAIL;37;HOST_UP
+M;vm-11eb;eu-west-2;FAIL;12;DISK_FLASH
+N;vm-01cc;eu-west-2;FAIL;30;POWER_ON

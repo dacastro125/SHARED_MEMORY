@@ -1,0 +1,4 @@
+3
+M;vm-004f;us-east-1;FAIL;37;HOST_DOWN
+M;vm-11eb;us-east-1;FAIL;12;DISK_SLOW
+N;vm-01cc;us-east-1;FAIL;10;POWER_OFF
