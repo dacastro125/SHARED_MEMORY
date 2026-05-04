@@ -1,0 +1,177 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 23:20 ?        00:00:00 /sbin/init
+root         2     0  0 23:20 ?        00:00:00 [kthreadd]
+root         3     2  0 23:20 ?        00:00:00 [ksoftirqd/0]
+root         6     2  0 23:20 ?        00:00:00 [migration/0]
+root         7     2  0 23:20 ?        00:00:00 [watchdog/0]
+root         8     2  0 23:20 ?        00:00:00 [migration/1]
+root        10     2  0 23:20 ?        00:00:04 [ksoftirqd/1]
+root        11     2  0 23:20 ?        00:00:00 [watchdog/1]
+root        12     2  0 23:20 ?        00:00:00 [cpuset]
+root        13     2  0 23:20 ?        00:00:00 [khelper]
+root        14     2  0 23:20 ?        00:00:00 [kdevtmpfs]
+root        15     2  0 23:20 ?        00:00:00 [netns]
+root        17     2  0 23:20 ?        00:00:00 [sync_supers]
+root        18     2  0 23:20 ?        00:00:00 [bdi-default]
+root        19     2  0 23:20 ?        00:00:00 [kintegrityd]
+root        20     2  0 23:20 ?        00:00:00 [kblockd]
+root        21     2  0 23:20 ?        00:00:00 [ata_sff]
+root        22     2  0 23:20 ?        00:00:00 [khubd]
+root        23     2  0 23:20 ?        00:00:00 [md]
+root        26     2  0 23:20 ?        00:00:00 [khungtaskd]
+root        27     2  0 23:20 ?        00:00:00 [kswapd0]
+root        28     2  0 23:20 ?        00:00:00 [ksmd]
+root        29     2  0 23:20 ?        00:00:00 [khugepaged]
+root        30     2  0 23:20 ?        00:00:00 [fsnotify_mark]
+root        31     2  0 23:20 ?        00:00:00 [ecryptfs-kthrea]
+root        32     2  0 23:20 ?        00:00:00 [crypto]
+root        41     2  0 23:20 ?        00:00:00 [kthrotld]
+root        43     2  0 23:20 ?        00:00:00 [scsi_eh_0]
+root        44     2  0 23:20 ?        00:00:00 [scsi_eh_1]
+root        45     2  0 23:20 ?        00:00:00 [kworker/u:2]
+root        46     2  0 23:20 ?        00:00:00 [scsi_eh_2]
+root        47     2  0 23:20 ?        00:00:00 [scsi_eh_3]
+root        48     2  0 23:20 ?        00:00:00 [kworker/u:3]
+root        50     2  0 23:20 ?        00:00:00 [binder]
+root        70     2  0 23:20 ?        00:00:00 [deferwq]
+root        71     2  0 23:20 ?        00:00:00 [charger_manager]
+root        72     2  0 23:20 ?        00:00:00 [devfreq_wq]
+root        73     2  0 23:20 ?        00:00:02 [kworker/1:2]
+root       221     2  0 23:20 ?        00:00:00 [scsi_eh_4]
+root       225     2  0 23:20 ?        00:00:00 [usb-storage]
+root       261     1  1 23:20 ?        00:00:27 mount.ntfs /dev/disk/by-uuid/9A94DC5D94DC3D87 /root
+root       268     2  0 23:20 ?        00:00:04 [loop0]
+root       270     2  0 23:20 ?        00:00:00 [kjournald]
+root       365     2  0 23:20 ?        00:00:00 [flush-7:0]
+root       400     1  0 23:20 ?        00:00:00 upstart-udev-bridge --daemon
+root       415     1  0 23:20 ?        00:00:00 /sbin/udevd --daemon
+syslog     503     1  0 23:20 ?        00:00:00 rsyslogd -c5
+root       607     1  0 23:20 ?        00:00:00 upstart-socket-bridge --daemon
+root       633   415  0 23:20 ?        00:00:00 /sbin/udevd --daemon
+root       650   415  0 23:20 ?        00:00:00 /sbin/udevd --daemon
+102        659     1  0 23:20 ?        00:00:00 dbus-daemon --system --fork
+root       694     2  0 23:20 ?        00:00:00 [flush-8:0]
+root       710     1  0 23:20 ?        00:00:00 /usr/sbin/modem-manager
+root       728     2  0 23:20 ?        00:00:00 [kpsmoused]
+root       733     1  0 23:20 ?        00:00:00 /usr/sbin/bluetoothd
+avahi      786     1  0 23:20 ?        00:00:00 avahi-daemon: running [ubuntu.local]
+avahi      787   786  0 23:20 ?        00:00:00 avahi-daemon: chroot helper
+root       788     2  0 23:20 ?        00:00:00 [krfcommd]
+root       841     2  0 23:20 ?        00:00:00 [hd-audio0]
+root       851     1  0 23:20 ?        00:00:00 /usr/sbin/cupsd -F
+root       865     1  0 23:20 ?        00:00:00 NetworkManager
+root       896     1  0 23:20 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root       908     1  0 23:20 ?        00:00:00 /sbin/wpa_supplicant -B -P /run/sendsigs.omit.d/wpasupplicant.pid -u -s -O /var/run/wpa_supplicant
+root       934     1  0 23:20 tty4     00:00:00 /sbin/getty -8 38400 tty4
+root       939     1  0 23:20 tty5     00:00:00 /sbin/getty -8 38400 tty5
+root       947     1  0 23:20 tty2     00:00:00 /sbin/getty -8 38400 tty2
+root       948     1  0 23:20 tty3     00:00:00 /sbin/getty -8 38400 tty3
+root       954     1  0 23:20 tty6     00:00:00 /sbin/getty -8 38400 tty6
+root       965     1  0 23:20 ?        00:00:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root       971     1  0 23:20 ?        00:00:00 cron
+daemon     972     1  0 23:20 ?        00:00:00 atd
+root       976     1  0 23:20 ?        00:00:00 lightdm
+root      1017   976  5 23:20 tty7     00:01:48 /usr/bin/X :0 -core -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch -background none
+whoopsie  1095     1  0 23:20 ?        00:00:00 whoopsie
+root      1163     1  0 23:20 tty1     00:00:00 /sbin/getty -8 38400 tty1
+root      1171     1  0 23:20 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root      1189     1  0 23:20 ?        00:00:00 /usr/sbin/console-kit-daemon --no-daemon
+root      1305     1  0 23:20 ?        00:00:00 /usr/lib/upower/upowerd
+root      1479   976  0 23:20 ?        00:00:00 lightdm --session-child 12 21
+colord    1484     1  0 23:21 ?        00:00:00 /usr/lib/x86_64-linux-gnu/colord/colord
+rtkit     1535     1  0 23:21 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+lightdm   1555     1  0 23:21 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+1000      1628     1  0 23:21 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+1000      1639  1479  0 23:21 ?        00:00:00 gnome-session --session=ubuntu
+1000      1675  1639  0 23:21 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session gnome-session --session=ubuntu
+1000      1678     1  0 23:21 ?        00:00:00 /usr/bin/dbus-launch --exit-with-session gnome-session --session=ubuntu
+1000      1679     1  0 23:21 ?        00:00:03 //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+1000      1681     1  0 23:21 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+1000      1685  1681  0 23:21 ?        00:00:00 /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+1000      1688     1  0 23:21 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+1000      1698  1639  0 23:21 ?        00:00:02 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+1000      1709     1  0 23:21 ?        00:00:00 /usr/lib/gvfs/gvfsd
+1000      1713     1  0 23:21 ?        00:00:00 /usr/lib/gvfs//gvfsd-fuse -f /run/user/josemejia/gvfs
+1000      1721  1639  3 23:21 ?        00:01:18 compiz
+1000      1728  1698  0 23:21 ?        00:00:00 syndaemon -i 2.0 -K -R -t
+1000      1733     1  0 23:21 ?        00:00:09 /usr/bin/pulseaudio --start --log-target=syslog
+1000      1738     1  0 23:21 ?        00:00:00 /usr/lib/dconf/dconf-service
+1000      1742  1639  0 23:21 ?        00:00:00 bluetooth-applet
+1000      1745  1733  0 23:21 ?        00:00:00 /usr/lib/pulseaudio/pulse/gconf-helper
+1000      1747     1  0 23:21 ?        00:00:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+1000      1748  1639  0 23:21 ?        00:00:06 nautilus -n
+1000      1749  1639  0 23:21 ?        00:00:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+1000      1751  1639  0 23:21 ?        00:00:04 nm-applet
+1000      1752  1639  0 23:21 ?        00:00:00 /usr/lib/gnome-settings-daemon/gnome-fallback-mount-helper
+1000      1764     1  0 23:21 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+root      1774     1  0 23:21 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+1000      1781     1  0 23:21 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+1000      1783     1  0 23:21 ?        00:00:00 /usr/lib/notify-osd/notify-osd
+1000      1787     1  0 23:21 ?        00:00:00 /usr/bin/gnome-screensaver --no-daemon
+1000      1792     1  0 23:21 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+1000      1807     1  0 23:21 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+1000      1812     1  0 23:21 ?        00:00:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.7 /org/gtk/gvfs/exec_spaw/1
+1000      1820     1  0 23:21 ?        00:00:02 /usr/lib/bamf/bamfdaemon
+1000      1824  1721  0 23:21 ?        00:00:00 /bin/sh -c /usr/bin/gtk-window-decorator
+1000      1825  1824  0 23:21 ?        00:00:01 /usr/bin/gtk-window-decorator
+1000      1834     1  0 23:21 ?        00:00:07 /usr/lib/unity/unity-panel-service
+1000      1836     1  0 23:21 ?        00:00:06 /usr/lib/indicator-appmenu/hud-service
+1000      1850     1  0 23:21 ?        00:00:00 /usr/lib/indicator-datetime/indicator-datetime-service
+1000      1854     1  0 23:21 ?        00:00:00 /usr/lib/indicator-printers/indicator-printers-service
+1000      1855     1  0 23:21 ?        00:00:00 /usr/lib/indicator-session/indicator-session-service
+1000      1856     1  0 23:21 ?        00:00:00 /usr/lib/indicator-messages/indicator-messages-service
+1000      1857     1  0 23:21 ?        00:00:00 /usr/lib/indicator-sound/indicator-sound-service
+1000      1858     1  0 23:21 ?        00:00:01 /usr/lib/x86_64-linux-gnu/indicator-application-service
+1000      1883     1  0 23:21 ?        00:00:00 /usr/lib/evolution/evolution-source-registry
+1000      1897  1639  0 23:21 ?        00:00:00 telepathy-indicator
+1000      1905     1  0 23:21 ?        00:00:00 /usr/lib/geoclue/geoclue-master
+1000      1917     1  0 23:21 ?        00:00:00 /usr/lib/ubuntu-geoip/ubuntu-geoip-provider
+1000      1924     1  0 23:21 ?        00:00:00 /usr/lib/telepathy/mission-control-5
+1000      1931     1  0 23:21 ?        00:00:00 /usr/bin/signon-ui
+1000      1934  1639  0 23:21 ?        00:00:00 zeitgeist-datahub
+1000      1940     1  0 23:21 ?        00:00:00 /usr/bin/zeitgeist-daemon
+1000      1946     1  0 23:21 ?        00:00:00 /usr/lib/zeitgeist/zeitgeist-fts
+1000      1954  1946  0 23:21 ?        00:00:00 /bin/cat
+1000      1974     1  0 23:21 ?        00:00:02 /usr/bin/python /usr/lib/ubuntuone-client/ubuntuone-syncdaemon
+1000      2021     1  0 23:22 ?        00:00:00 /usr/lib/unity-lens-applications/unity-applications-daemon
+1000      2023     1  0 23:22 ?        00:00:00 /usr/lib/unity-lens-files/unity-files-daemon
+1000      2025     1  0 23:22 ?        00:00:00 /usr/lib/gwibber/unity-gwibber-daemon
+1000      2027     1  0 23:22 ?        00:00:00 /usr/lib/x86_64-linux-gnu/unity-music-daemon
+1000      2029     1  0 23:22 ?        00:00:00 /usr/bin/python3 /usr/lib/unity-lens-photos/unity-lens-photos
+1000      2031     1  0 23:22 ?        00:00:00 /usr/lib/x86_64-linux-gnu/unity-shopping-daemon
+1000      2033     1  0 23:22 ?        00:00:00 /usr/bin/python /usr/lib/unity-lens-video/unity-lens-video
+1000      2104     1  0 23:22 ?        00:00:00 /usr/bin/signond
+1000      2107     1  0 23:22 ?        00:00:00 /usr/bin/python /usr/lib/unity-scope-video-remote/unity-scope-video-remote
+1000      2108     1  0 23:22 ?        00:00:00 /usr/bin/python3 /usr/lib/unity-lens-files/unity-scope-gdocs
+1000      2125  2104  0 23:22 ?        00:00:00 /usr/bin/signonpluginprocess oauth2
+1000      2128  2104  0 23:22 ?        00:00:00 /usr/bin/signonpluginprocess oauth2
+1000      2130  2128  0 23:22 ?        00:00:00 sh -c /usr/lib/x86_64-linux-gnu/libproxy/0.4.7/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+1000      2131  2130  0 23:22 ?        00:00:00 /usr/lib/x86_64-linux-gnu/libproxy/0.4.7/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+1000      2135     1  0 23:22 ?        00:00:00 /usr/lib/x86_64-linux-gnu/unity-musicstore-daemon
+1000      2149  2125  0 23:22 ?        00:00:00 sh -c /usr/lib/x86_64-linux-gnu/libproxy/0.4.7/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+1000      2150  2149  0 23:22 ?        00:00:00 /usr/lib/x86_64-linux-gnu/libproxy/0.4.7/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+1000      2158  1639  0 23:22 ?        00:00:00 update-notifier
+1000      2161  1931  0 23:22 ?        00:00:00 sh -c /usr/lib/x86_64-linux-gnu/libproxy/0.4.7/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+1000      2162  2161  0 23:22 ?        00:00:00 /usr/lib/x86_64-linux-gnu/libproxy/0.4.7/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+1000      2212  1639  0 23:23 ?        00:00:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+root      2240   865  0 23:23 ?        00:00:00 /sbin/dhclient -d -4 -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /var/run/sendsigs.omit.d/network-manager.dhclient-eth1.pid -lf /var/lib/dhcp/dhclient-67644d75-4de4-44a5-8f0d-63f649d13bba-eth1.lease -cf /var/run/nm-dhclient-eth1.conf eth1
+nobody    2244   865  0 23:23 ?        00:00:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/nm-dns-dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+1000      2387     1  0 23:24 ?        00:00:00 /usr/lib/libunity-webapps/unity-webapps-service
+1000      2461     1  0 23:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+root      2473     1  0 23:25 ?        00:00:00 /sbin/mount.ntfs /dev/sda1 /media/josemejia/200 MB -o rw,nosuid,nodev,uhelper=udisks2,uid=1000,gid=1000,dmask=0077,fmask=0177
+1000      2688     1  0 23:30 ?        00:00:00 /usr/lib/gvfs/gvfsd-http --spawner :1.7 /org/gtk/gvfs/exec_spaw/2
+root      2787     2  0 23:36 ?        00:00:01 [kworker/0:1]
+1000      2921     1  3 23:38 ?        00:00:33 gedit
+root      3004     2  0 23:42 ?        00:00:00 [kworker/1:0]
+root      3099     2  0 23:46 ?        00:00:00 [kworker/0:2]
+1000      3112     1  0 23:46 ?        00:00:01 gnome-terminal
+1000      3119  3112  0 23:46 ?        00:00:00 gnome-pty-helper
+1000      3120  3112  0 23:46 pts/0    00:00:00 bash
+root      3255     2  0 23:50 ?        00:00:00 [kworker/1:1]
+1000      3275  3120  0 23:51 pts/0    00:00:00 ./j
+1000      3276  3275  0 23:51 pts/0    00:00:00 ./j
+1000      3277  3275  0 23:51 pts/0    00:00:00 ./j
+root      3286     2  0 23:51 ?        00:00:00 [kworker/1:3]
+root      3288     2  0 23:51 ?        00:00:00 [kworker/0:0]
+1000      3334  3120  0 23:53 pts/0    00:00:00 ./j
+1000      3336  3334  0 23:53 pts/0    00:00:00 ps -ef

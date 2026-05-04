@@ -1,0 +1,80 @@
+
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+void* f(void * arg);
+
+int turno=0;
+int v[0],n;
+
+int main(){
+	pthread_t h[3];
+	int *x;
+	int i;
+	
+	printf("ingrese el tamaño del vector");
+	    scanf("%d",&n);
+	    for(i=0;i<n;i++){
+	    printf("ingrese el elemento %d vector",i+1);
+	    scanf("%d",&v[i]);
+	    }
+	    
+	    for(i=0;i<n;i++){
+	    printf("elemento %d\n",v[i]);
+	    }
+	    
+	    
+	for(i=0; i<3; i++){
+	x = (int *)malloc(sizeof(int));
+	*x = i+1;
+	pthread_create(&h[i], NULL, f, (void*)x);
+	}
+	turno=1;
+	for(i=0; i<3; i++){
+	pthread_join(h[i], NULL);
+	}
+	
+}
+
+void* f(void * arg){
+    int j=*(int *)arg;
+    int i, promedio, mayor=0, menor=0, suma=0;
+    while(j!=turno){}//no hace nada
+   
+   if(turno==1){
+        printf("hilo %d\n", j);
+        for(i=0;i<n;i++){
+            suma=suma+v[i];
+        }
+         promedio=suma/n;
+       printf("el promedio es: %d\n", promedio);  
+    }
+	
+	if(turno==2){
+        printf("hilo %d\n", j);
+        mayor=v[1];
+        for(i=0;i<n;i++){
+            if(v[i]>mayor){
+                mayor=v[i];
+            }
+        }
+       printf("el mayor es: %d\n", mayor);  
+    }
+    
+    	if(turno==3){
+        printf("hilo %d\n", j);
+        menor=v[1];
+        for(i=0;i<n;i++){
+            if(v[i]<menor){
+                menor=v[i];
+            }
+        }
+       printf("el menor es: %d\n", menor);  
+    }
+    
+	turno++;
+	return NULL;
+	//pthread_exit(0);
+}
